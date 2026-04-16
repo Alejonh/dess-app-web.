@@ -13,7 +13,7 @@
         <p>Estudiante de Diseño Interactivo | Entusiasta de la Animación y el Desarrollo Web</p>
         <img src="img/foto_perfil.jpg" alt="Foto de perfil de Alejandro" width="150">
     </header>
-
+    
     <nav>
         <ul>
             <li><a href="#sobre-mi">Sobre mí</a></li>
@@ -34,10 +34,21 @@
             <h2>Mi Portafolio</h2>
             <div class="galeria">
                 <article class="proyecto-card">
-                    <img src="img/proyecto1-thumb.jpg" alt="Miniatura de Juguetes Inclusivos" width="200">
+                    <img src="img/modelado1.jpg" alt="Render de Kuromi" width="200">
+                    <h3>Modelados 3D</h3>
+                    <p>Renderizados de algunos proyectos de Blender.</p>
+                    <a href="proyecto1.html.txt">Ver detalle del proyecto</a>
+                </article>
+        </section>
+
+        <section id="portafolio">
+            <h2>Mi Portafolio</h2>
+            <div class="galeria">
+                <article class="proyecto-card">
+                    <img src="img/proyecto2-thumb.jpg" alt="Miniatura de Juguetes Inclusivos" width="200">
                     <h3>Juguetes Educativos Inclusivos</h3>
                     <p>Diseño de juguetes con enfoque social.</p>
-                    <a href="proyecto1.html">Ver detalle del proyecto</a>
+                    <a href="proyecto2.html.txt">Ver detalle del proyecto</a>
                 </article>
 
                 </div>

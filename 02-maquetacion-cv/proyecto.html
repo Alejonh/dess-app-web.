@@ -2,29 +2,111 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto | Modelado 3D</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Modelado 3D con Blender</h1>
-        <a href="index.html">← Volver al CV</a>
+    <header class="header-multimedia">
+        <div class="header-content">
+            <h1>Modelado 3D con Blender</h1>
+            <a href="index.html" class="btn-volver">← Volver al CV</a>
+        </div>
     </header>
 
-    <main>
-        <section>
+    <main class="contenedor-principal">
+        <section class="intro-proyecto">
             <h2>Descripción del Proyecto</h2>
-            <p>En este proyecto realicé el modelado y renderizado de un personaje utilizando Blender. Trabajé con técnicas de rigging y texturizado.</p>
+            <p>Exploración del flujo completo de producción 3D dentro de <strong>Blender</strong>, abarcando desde la conceptualización y el modelado geométrico hasta el texturizado, rigging e iluminación. El enfoque principal fue dominar la topología de mallas y la optimización de escenas para proyectos multimedia interactivos.</p>
+        </section>
+
+        <section class="galeria-detalle">
             
-            <div class="galeria-detalle">
-                <img src="img/render1.jpg" alt="Render de personaje 1" width="500">
-                <img src="img/render2.jpg" alt="Vista de malla (wireframe)" width="500">
+            <div class="proyecto-card">
+                <div class="card-img">
+                    <img src="img/modelado1.jpg" alt="Modelado de Kuromi en Blender">
+                </div>
+                <div class="card-info">
+                    <span class="badge badge-purple">Personaje & Rigging</span>
+                    <h3>Modelado Estilizado: Kuromi</h3>
+                    <p>Recreación geométrica de personaje con un flujo enfocado en mallas limpias. Configuración de armature para articulación fluida evitando deformaciones en las uniones.</p>
+                </div>
             </div>
+
+            <div class="proyecto-card">
+                <div class="card-img">
+                    <img src="img/modelado2.jpg" alt="Escena conceptual Help en botella">
+                </div>
+                <div class="card-info">
+                    <span class="badge badge-blue">Render & Materiales</span>
+                    <h3>Escena Conceptual "Help"</h3>
+                    <p>Manejo de materiales translúcidos y refracción de luz (vidrio). Composición de iluminación cenital dirigida para guiar la narrativa y el enfoque visual de la escena.</p>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <div class="card-img">
+                    <img src="img/modelado3.jpg" alt="Modelado de Plankton en escenario">
+                </div>
+                <div class="card-info">
+                    <span class="badge badge-purple">Personaje & Rigging</span>
+                    <h3>Modelado de Plankton</h3>
+                    <p>Diseño y texturizado del personaje integrado en un escenario low-poly. Trabajo de pesado de vértices para expresiones y poses.</p>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <div class="card-img">
+                    <img src="img/modelado4.jpg" alt="Planta arquitectónica e iluminación de interiores">
+                </div>
+                <div class="card-info">
+                    <span class="badge badge-orange">Layout & Iluminación</span>
+                    <h3>Distribución de Escenario Cenital</h3>
+                    <p>Diseño de entornos e interiores a partir de una vista aérea. Implementación de múltiples luces artificiales puntuales y focales para lograr profundidad y realismo ambiental.</p>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <div class="card-img">
+                    <img src="img/modelado5.jpg" alt="Entorno submarino con delfín en Blender">
+                </div>
+                <div class="card-info">
+                    <span class="badge badge-blue">Ambiente & Iluminación</span>
+                    <h3>Entorno Submarino Orgánico</h3>
+                    <p>Modelado de elementos orgánicos (arrecifes, algas y fauna marina). El principal reto técnico fue simular la densidad del agua y los rayos de luz filtrándose desde la superficie.</p>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <div class="card-img">
+                    <img src="img/modelado6.jpg" alt="Escena interior nocturna en Blender">
+                </div>
+                <div class="card-info">
+                    <span class="badge badge-orange">Composición & Mood</span>
+                    <h3>Narrativa Visual: Soledad Nocturna</h3>
+                    <p>Creación de una escena de interior con iluminación de bajo contraste. Configuración de materiales con emisión propia para las estrellas de la pared y balance de sombras.</p>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <div class="card-img">
+                    <img src="img/modelado7.jpg" alt="Modelado de Minion en pose T">
+                </div>
+                <div class="card-info">
+                    <span class="badge badge-purple">Modelado Complejo</span>
+                    <h3>Modelado de Personaje: Minion</h3>
+                    <p>Modelado de personaje basado en referencias con múltiples capas de geometría (cuerpo, overol y lentes). Estructurado en Pose en T listo para rigging.</p>
+                </div>
+            </div>
+
         </section>
     </main>
 
-    <footer>
-        <p>Diseño por Alejandro Nah</p>
+    <footer class="footer-multimedia">
+        <p>Diseñado y Modelado por <span>Alejandro Nah</span> &copy; 2026</p>
     </footer>
 </body>
 </html>

@@ -50,7 +50,7 @@ body {
 }
 
 /* ==========================================================================
-   CONTENEDOR & SECCIÓN INTRO
+   CONTENEDOR & ESTRUCTURA SUPERIOR (TU BOCETO)
    ========================================================================== */
 .contenedor-principal {
     max-width: 1200px;
@@ -58,8 +58,33 @@ body {
     padding: 0 20px;
 }
 
+/* Alineación de la foto al lado del "Sobre mí" */
+.perfil-superior {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.perfil-foto-contenedor {
+    flex-shrink: 0;
+}
+
+.perfil-foto-circular {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #F97316; /* Aro naranja de enfoque artístico */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.perfil-sobre-mi {
+    flex-grow: 1;
+    margin-bottom: 0 !important; /* Resetea el margen inferior para alinearse bien */
+}
+
 .intro-proyecto {
-    margin-bottom: 50px;
     background: #1A1A1E;
     padding: 30px;
     border-radius: 12px;
@@ -67,29 +92,84 @@ body {
 }
 
 .intro-proyecto h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #FFFFFF;
     margin-bottom: 10px;
 }
 
 .intro-proyecto p {
     color: #94A3B8;
-    font-size: 1.1rem;
-    max-width: 800px;
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+.intro-proyecto p:last-child {
+    margin-bottom: 0;
 }
 
 /* ==========================================================================
-   REJILLA DINÁMICA (FUERZA LAS COLUMNAS MULTIMEDIA)
+   SECCIÓN DE HABILIDADES EN COLUMNAS PARALELAS
+   ========================================================================== */
+.detalles-tecnicos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el espacio en 2 columnas exactas */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.bloque-tecnico {
+    background-color: #1A1A1E;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #2A2A30;
+}
+
+.bloque-tecnico h3 {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #2A2A30;
+    padding-bottom: 8px;
+}
+
+.lista-check {
+    list-style: none;
+    color: #94A3B8;
+}
+
+.lista-check li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+/* Pequeño punto naranja personalizado para las listas */
+.lista-check li::before {
+    content: "•";
+    color: #F97316;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Contenedor de etiquetas/badges flexibles para las aplicaciones */
+.apps-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ==========================================================================
+   REJILLA DINÁMICA (PORTAFOLIO BAJO EL BOCETO)
    ========================================================================== */
 .galeria-detalle {
     display: grid;
-    /* Esto distribuye tus renders en 2 o 3 columnas automáticamente según el espacio */
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); 
-    gap: 30px; /* Espacio ordenado entre tarjetas */
+    gap: 30px; 
     margin-top: 20px;
 }
 
-/* TARJETAS (CARDS) */
 .proyecto-card {
     background-color: #1A1A1E;
     border-radius: 12px;
@@ -100,7 +180,6 @@ body {
     flex-direction: column;
 }
 
-/* Efecto interactivo al pasar el mouse */
 .proyecto-card:hover {
     transform: translateY(-5px);
     border-color: #F97316;
@@ -109,20 +188,24 @@ body {
 
 .card-img {
     width: 100%;
-    height: 250px; /* Altura fija para que todas las tarjetas queden simétricas */
+    height: 320px;
     overflow: hidden;
-    background-color: #050505;
+    background-color: #1A1A1E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
 }
 
 .card-img img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Evita que las imágenes se deformen */
+    object-fit: contain;
     transition: transform 0.5s ease;
 }
 
 .proyecto-card:hover .card-img img {
-    transform: scale(1.04); /* Zoom sutil */
+    transform: scale(1.04);
 }
 
 .card-info {
@@ -136,13 +219,11 @@ body {
 .card-info h3 {
     color: #FFFFFF;
     font-size: 1.4rem;
-    text-align: left;
 }
 
 .card-info p {
     color: #94A3B8;
     font-size: 0.95rem;
-    text-align: left;
 }
 
 /* ==========================================================================
@@ -150,7 +231,7 @@ body {
    ========================================================================== */
 .badge {
     align-self: flex-start;
-    padding: 4px 12px;
+    padding: 6px 14px;
     border-radius: 20px;
     font-size: 0.75rem;
     font-weight: 700;
@@ -163,8 +244,16 @@ body {
 .badge-orange { background-color: rgba(249, 115, 22, 0.15); color: #FB923C; }
 
 /* ==========================================================================
-   FOOTER
+   ADAPTACIONES DE INICIO Y FOOTER
    ========================================================================== */
+.subtitulo-header {
+    color: #94A3B8;
+    font-size: 0.95rem;
+    font-weight: 400;
+    max-width: 600px;
+    text-align: right;
+}
+
 .footer-multimedia {
     text-align: center;
     padding: 30px 0;
@@ -175,19 +264,44 @@ body {
     font-size: 0.9rem;
 }
 
-.footer-multimedia span {
-    color: #F97316;
-    font-weight: 500;
+.footer-multimedia p {
+    margin: 5px 0;
+    display: inline-block;
+    padding: 0 15px;
 }
 
-/* RESPONSIVO: Si la pantalla es muy pequeña (celulares), se adapta a 1 columna */
+.footer-multimedia p a {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   SOPORTE RESPONSIVO (EVITA QUE SE ROMPA EN MÓVILES)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    .subtitulo-header {
+        text-align: center;
+        font-size: 0.85rem;
+    }
+    .perfil-superior {
+        flex-direction: column; /* Foto arriba, Sobre mí abajo en pantallas chicas */
+        text-align: center;
+    }
+    .detalles-tecnicos-grid {
+        grid-template-columns: 1fr; /* Las habilidades se apilan verticalmente */
+    }
+    .footer-multimedia p {
+        display: block;
+        padding: 5px 0;
+    }
+}
+
 @media (max-width: 600px) {
     .galeria-detalle {
         grid-template-columns: 1fr;
-    }
-    .header-content {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
     }
 }

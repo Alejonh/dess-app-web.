@@ -2,29 +2,60 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Proyecto | Modelado 3D</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto | Publicidad y Catálogo Digital</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Modelado 3D con Blender</h1>
-        <a href="index.html">← Volver al CV</a>
+    <header class="header-multimedia">
+        <div class="header-content">
+            <h1>Diseño Publicitario e Identidad Visual</h1>
+            <a href="index.html" class="btn-volver">← Volver al CV</a>
+        </div>
     </header>
 
-    <main>
-        <section>
+    <main class="contenedor-principal">
+        <section class="intro-proyecto">
             <h2>Descripción del Proyecto</h2>
-            <p>En este proyecto realicé el modelado y renderizado de un personaje utilizando Blender. Trabajé con técnicas de rigging y texturizado.</p>
+            <p>
+                Desarrollo de piezas gráficas publicitarias y maquetación de catálogo digital para la marca <strong>Abdala (American Shoes)</strong>. 
+                El proyecto combinó la composición visual de alto impacto para campañas de calzado deportivo con el diseño editorial y comercial, 
+                estructurando un catálogo de productos limpio, funcional y enfocado en la conversión de ventas.
+            </p>
+        </section>
             
-            <div class="galeria-detalle">
-                <img src="img/render1.jpg" alt="Render de personaje 1" width="500">
-                <img src="img/render2.jpg" alt="Vista de malla (wireframe)" width="500">
+        <section class="galeria-detalle">
+            
+            <div class="proyecto-card">
+                <div class="card-img">
+                    <img src="img/abdala.jpg" alt="Póster publicitario Abdala American Shoes">
+                </div>
+                <div class="card-info">
+                    <span class="badge badge-blue">Diseño Publicitario</span>
+                    <h3>Póster de Campaña</h3>
+                    <p>Composición tipográfica vertical y manejo de contrastes cromáticos sobre fondo degradado para el lanzamiento de campaña de calzado deportivo.</p>
+                </div>
             </div>
+
+            <div class="proyecto-card">
+                <div class="card-img">
+                    <img src="img/abdala2.jpg" alt="Diseño de página de catálogo deportivo">
+                </div>
+                <div class="card-info">
+                    <span class="badge badge-purple">Diseño Editorial</span>
+                    <h3>Maquetación de Catálogo Digital</h3>
+                    <p>Organización de retícula comercial para productos destacados, gestión de tipografías para precios, tallas y elementos gráficos de llamadas a la acción (Call to Action) como banners promocionales.</p>
+                </div>
+            </div>
+
         </section>
     </main>
 
-    <footer>
-        <p>Diseño por Alejandro Nah</p>
+    <footer class="footer-multimedia">
+        <p>Diseño por <span>Alejandro Nah</span> &copy; 2026</p>
     </footer>
 </body>
 </html>
